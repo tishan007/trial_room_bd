@@ -25,7 +25,12 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: Colors.redAccent,
         ),
         body: Center(
-          child: Text("Trial Room"),
+          child: Column(
+            children: [
+              GestureDetector(onTap: (){},child: Container(color: Colors.yellow,height: MediaQuery.of(context).size.height/2 - 40,child: Center(child: Text("Women")))),
+              GestureDetector(onTap: (){},child: Container(color: Colors.greenAccent,height: MediaQuery.of(context).size.height/2 - 40, child: Center(child: Text("Men")))),
+            ],
+          ),
         ),
       ),
     );
